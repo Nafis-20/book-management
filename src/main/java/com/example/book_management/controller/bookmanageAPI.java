@@ -24,7 +24,7 @@ public class bookmanageAPI
     public String createBookManagementDetails(@RequestBody bookmanagement bookman)
     {
         this.bookman=bookman;
-        return "GOT IT!!!!YAAAA";
+        return "New Book Created Successfully!!";
     }
 
     @PutMapping
@@ -32,7 +32,7 @@ public class bookmanageAPI
     public String updateBookManagementDetails(@RequestBody bookmanagement bookman)
     {
         this.bookman=bookman;
-        return "Book details !!!UPDATED!!!";
+        return "Book Updated Successfully!!";
     }
 
    @DeleteMapping("{bookID}")
@@ -40,14 +40,7 @@ public class bookmanageAPI
     public String deleteBookManagementDetails(String bookID)
     {
         this.bookman=null;
-        return "Book details !!!DELETED!!!";
-    }
-
-    @RequestMapping
-    public String retrieveBookManagementDetails(String bookID)
-    {
-        this.bookman=bookman;
-        return "Book details !!!DELETED!!!";
+        return "Book Deleted Successfully!!!";
     }
 
 
