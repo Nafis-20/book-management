@@ -19,34 +19,34 @@ IntelliJ IDEA (for development)
 
 API Endpoints
 -
-Books
-
 Create a Book
 -
-URL: POST/api/books/
-Description: Create a new book with title, author, and price.
-Request Body: 
-{
+* URL: POST /api/books/
+* Description: Create a new book with title, author, and price.\\
+* Request Body:
+* {
   "title": "Book Title",
   "author": "Book Author",
   "price": 29.99
 }
-Response: Returns the created book object.
+* Response: Returns the created book object.
 
 Update a Book
 -
-URL: PUT /api/books/{book_id}/
-Description: Update an existing book's information by ID.
-Request Body:
-{
+* URL: PUT /api/books/{book\_id}/
+* Description: Update an existing book's information by ID.
+* Request Body:
+* {
   "title": "Updated Book Title",
   "author": "Updated Book Author",
   "price": 39.99
 }
-Response: Returns the updated book object.
+* Response: Returns the updated book object.
 
 Delete a Book
 -
-URL: DELETE /api/books/{book_id}/
-Description: Delete a book identified by {book_id}.
-Response: Returns a success message upon successful deletion.
+* URL: DELETE /api/books/{book\_id}/
+* Description: Delete a book identified by {book\_id}.
+* Response: Returns a success message upon successful deletion.
+
+
